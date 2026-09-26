@@ -1,0 +1,986 @@
+{
+  "source": "data/bulletin.pdf",
+  "page_range": [
+    611,
+    751
+  ],
+  "records": [
+    {
+      "course_code": "AN F311",
+      "prerequisite_course_codes": [
+        "CE F231",
+        "CHE F212",
+        "ME F212"
+      ],
+      "rule": "any_of",
+      "raw_text": "CE F231 OR CHE F212 OR ME F212 Fluid Me- chanics OR MF 218 Transport Phenomena in Manufacturing",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 611
+      }
+    },
+    {
+      "course_code": "AN F312",
+      "prerequisite_course_codes": [
+        "CE F231",
+        "CHE F212",
+        "ME F212"
+      ],
+      "rule": "any_of",
+      "raw_text": "CE F231 OR CHE F212 OR ME F212 Fluid Me- chanics OR MF 218 Transport Phenomena in Manufacturing",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 611
+      }
+    },
+    {
+      "course_code": "AN F315",
+      "prerequisite_course_codes": [
+        "ME F211",
+        "CE F211"
+      ],
+      "rule": "any_of",
+      "raw_text": "ME F211 OR CE F211 Mechanics of Solids",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 611
+      }
+    },
+    {
+      "course_code": "AN F316",
+      "prerequisite_course_codes": [
+        "PHY F111"
+      ],
+      "rule": "single",
+      "raw_text": "PHY F111: Mechanics, Oscillations and Waves",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 611
+      }
+    },
+    {
+      "course_code": "AUE F241",
+      "prerequisite_course_codes": [
+        "AUE F211"
+      ],
+      "rule": "single",
+      "raw_text": "AUE F211: Basic Design for Visualization",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 612
+      }
+    },
+    {
+      "course_code": "AUE F311",
+      "prerequisite_course_codes": [
+        "AUE F241"
+      ],
+      "rule": "single",
+      "raw_text": "AUE F241: Architectural Design Studio I",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 612
+      }
+    },
+    {
+      "course_code": "AUE F313",
+      "prerequisite_course_codes": [
+        "AUE F212",
+        "CE F211"
+      ],
+      "rule": "any_of",
+      "raw_text": "AUE F212: Structural Mechanics or CE F211: Me- chanics of Solids",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 612
+      }
+    },
+    {
+      "course_code": "AUE F343",
+      "prerequisite_course_codes": [
+        "AUE F212",
+        "CE F211"
+      ],
+      "rule": "any_of",
+      "raw_text": "AUE F212: Structural Mechanics or CE F211: Mechanics of Solids",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 612
+      }
+    },
+    {
+      "course_code": "AUE F344",
+      "prerequisite_course_codes": [
+        "AUE F311"
+      ],
+      "rule": "single",
+      "raw_text": "AUE F311: Architectural Design Studio II",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 612
+      }
+    },
+    {
+      "course_code": "AUE F345",
+      "prerequisite_course_codes": [
+        "AUE F344"
+      ],
+      "rule": "single",
+      "raw_text": "AUE F344: Directed Research in Architecture – I",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 613
+      }
+    },
+    {
+      "course_code": "BBA F223",
+      "prerequisite_course_codes": [
+        "MATH F114"
+      ],
+      "rule": "single",
+      "raw_text": "MATH F114 Mathematics for Business.",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 614
+      }
+    },
+    {
+      "course_code": "BITS F429",
+      "prerequisite_course_codes": [
+        "BITS F201",
+        "CHEM F333",
+        "PHY F414",
+        "CHE F243",
+        "ME F213",
+        "MF F213"
+      ],
+      "rule": "any_of",
+      "raw_text": "BITS F201: Material Science and Engineering (Pre-requisite) OR CHEM F333: Chemistry of Materials (Pre -requisite) OR PHY F414: Physics of Advanced Mat erials (Pre -requisite) OR CHE F243: Material Science and Engineering (Pre -requisite) OR ME F213: Materials Science and Engineering (Pre-requisite) OR MF F213: Materials Science and Engineering (Pre-requisite).",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 628
+      }
+    },
+    {
+      "course_code": "BITS F457",
+      "prerequisite_course_codes": [
+        "BITS F456"
+      ],
+      "rule": "single",
+      "raw_text": "BITS F456 Capstone Project I",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 630
+      }
+    },
+    {
+      "course_code": "CE F331",
+      "prerequisite_course_codes": [
+        "CE F243"
+      ],
+      "rule": "single",
+      "raw_text": "CE F243: Soil Mechanics",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 636
+      }
+    },
+    {
+      "course_code": "CE G576",
+      "prerequisite_course_codes": [
+        "CE F435",
+        "CE G619",
+        "ME G512"
+      ],
+      "rule": "any_of",
+      "raw_text": "CE F435 OR CE G619 OR ME G512",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 642
+      }
+    },
+    {
+      "course_code": "CHE F315",
+      "prerequisite_course_codes": [
+        "CHE F242",
+        "MATH F313"
+      ],
+      "rule": "any_of",
+      "raw_text": "CHE F242: Numerical Methods for Chemical En- gineers OR MATH F313: Numerical Analysis",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 644
+      }
+    },
+    {
+      "course_code": "CS F316",
+      "prerequisite_course_codes": [
+        "CS F215"
+      ],
+      "rule": "single",
+      "raw_text": "CS F215: Digital Design",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 656
+      }
+    },
+    {
+      "course_code": "CS F426",
+      "prerequisite_course_codes": [
+        "CS F211"
+      ],
+      "rule": "single",
+      "raw_text": "CS F211 : Data Structure and Algorithms",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 658
+      }
+    },
+    {
+      "course_code": "CS F427",
+      "prerequisite_course_codes": [
+        "CS F303"
+      ],
+      "rule": "single",
+      "raw_text": "CS F303 : Computer Networks",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 658
+      }
+    },
+    {
+      "course_code": "CS F430",
+      "prerequisite_course_codes": [
+        "CS F364"
+      ],
+      "rule": "single",
+      "raw_text": "CS F364: Design & Analysis of Algorithms",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 658
+      }
+    },
+    {
+      "course_code": "CS F431",
+      "prerequisite_course_codes": [
+        "CS F211"
+      ],
+      "rule": "single",
+      "raw_text": "CS F211: Data Structures & Algorithms",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 658
+      }
+    },
+    {
+      "course_code": "CS F435",
+      "prerequisite_course_codes": [
+        "CS F303"
+      ],
+      "rule": "single",
+      "raw_text": "CS F303: Computer Networks",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 659
+      }
+    },
+    {
+      "course_code": "CS F437",
+      "prerequisite_course_codes": [
+        "CS F429",
+        "BITS F464",
+        "CS F425"
+      ],
+      "rule": "any_of",
+      "raw_text": "CS F429: Natural Language Processing OR BITS F464: Machine Learning OR CS F425: Deep Learning",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 659
+      }
+    },
+    {
+      "course_code": "ECE F216",
+      "prerequisite_course_codes": [
+        "EEE F214",
+        "INSTR F214",
+        "ECE F214"
+      ],
+      "rule": "any_of",
+      "raw_text": "EEE F214 / INSTR F214 / ECE F214 : Electronic Devices",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 663
+      }
+    },
+    {
+      "course_code": "ECE F331",
+      "prerequisite_course_codes": [
+        "ECE F212",
+        "EEE F212",
+        "INSTR F212",
+        "PHY F212"
+      ],
+      "rule": "any_of",
+      "raw_text": "ECE/EEE/INSTR F212: Electromagnetic The- ory OR PHY F212: Electromagnetic Theory I.",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 663
+      }
+    },
+    {
+      "course_code": "ECE F423",
+      "prerequisite_course_codes": [
+        "EEE F214",
+        "INSTR F214",
+        "ECE F214"
+      ],
+      "rule": "any_of",
+      "raw_text": "EEE F214 / INSTR F214 / ECE F214 : Electronic Devices",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 664
+      }
+    },
+    {
+      "course_code": "ECE F424",
+      "prerequisite_course_codes": [
+        "EEE F242",
+        "INSTR F242",
+        "ECE F242"
+      ],
+      "rule": "any_of",
+      "raw_text": "EEE F242 / INSTR F242 / ECE F242 : Control Systems",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 664
+      }
+    },
+    {
+      "course_code": "ECE F438",
+      "prerequisite_course_codes": [
+        "ECE F211",
+        "EEE F211",
+        "INSTR F211",
+        "ECE F242",
+        "EEE F242",
+        "INSTR F242"
+      ],
+      "rule": "mixed_needs_verification",
+      "raw_text": "ECE/EEE/INSTR F211: Electrical Machines, and ECE/EEE/INSTR F242: Control Systems",
+      "status": "needs_verification",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 665
+      }
+    },
+    {
+      "course_code": "ECOM F321",
+      "prerequisite_course_codes": [
+        "CS F111"
+      ],
+      "rule": "single",
+      "raw_text": "CS F111: Computer Programming",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 670
+      }
+    },
+    {
+      "course_code": "ECON F419",
+      "prerequisite_course_codes": [
+        "ECON F242"
+      ],
+      "rule": "single",
+      "raw_text": "ECON F242 Microeconomics",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 668
+      }
+    },
+    {
+      "course_code": "EEE F216",
+      "prerequisite_course_codes": [
+        "EEE F214",
+        "INSTR F214",
+        "ECE F214"
+      ],
+      "rule": "any_of",
+      "raw_text": "EEE F214 / INSTR F214 / ECE F214 : Electronic Devices",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 673
+      }
+    },
+    {
+      "course_code": "EEE F419",
+      "prerequisite_course_codes": [
+        "EEE F214",
+        "INSTR F214",
+        "ECE F214"
+      ],
+      "rule": "any_of",
+      "raw_text": "EEE/INSTR/ECE F214: Electronic Devices",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 675
+      }
+    },
+    {
+      "course_code": "EEE F420",
+      "prerequisite_course_codes": [
+        "EEE F434",
+        "ECE F434"
+      ],
+      "rule": "any_of",
+      "raw_text": "EEE F434 or ECE F434 : Digital Signal Pro- cessing",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 675
+      }
+    },
+    {
+      "course_code": "EEE F423",
+      "prerequisite_course_codes": [
+        "EEE F214",
+        "INSTR F214",
+        "ECE F214"
+      ],
+      "rule": "any_of",
+      "raw_text": "EEE F214 / INSTR F214 / ECE F214 : Electronic Devices",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 675
+      }
+    },
+    {
+      "course_code": "EEE F424",
+      "prerequisite_course_codes": [
+        "EEE F242",
+        "INSTR F242",
+        "ECE F242"
+      ],
+      "rule": "any_of",
+      "raw_text": "EEE F242 / INSTR F242 / ECE F242 : Control Systems",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 675
+      }
+    },
+    {
+      "course_code": "EEE F430",
+      "prerequisite_course_codes": [
+        "EEE F311"
+      ],
+      "rule": "single",
+      "raw_text": "EEE F311: Communication Systems",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 676
+      }
+    },
+    {
+      "course_code": "EEE F437",
+      "prerequisite_course_codes": [
+        "ECE F214",
+        "ECOM F214",
+        "EEE F214",
+        "INSTR F214"
+      ],
+      "rule": "any_of",
+      "raw_text": "ECE F214 / ECOM F214 / EEE F214 / INSTR F214 : Electronic Devices",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 676
+      }
+    },
+    {
+      "course_code": "EEE F438",
+      "prerequisite_course_codes": [
+        "ECE F211",
+        "EEE F211",
+        "INSTR F211",
+        "ECE F242",
+        "EEE F242",
+        "INSTR F242"
+      ],
+      "rule": "mixed_needs_verification",
+      "raw_text": "ECE/EEE/INSTR F211: Electrical Machines, and ECE/EEE/INSTR F242: Control Systems",
+      "status": "needs_verification",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 676
+      }
+    },
+    {
+      "course_code": "EEE F439",
+      "prerequisite_course_codes": [
+        "EEE F241",
+        "CS F241",
+        "INSTR F241",
+        "ECE F241"
+      ],
+      "rule": "any_of",
+      "raw_text": "EEE/CS/INSTR/ECE F241 Microprocessor Pro- gramming and Interfacing. VI-68",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 676
+      }
+    },
+    {
+      "course_code": "EEE G614",
+      "prerequisite_course_codes": [
+        "EEE F311"
+      ],
+      "rule": "single",
+      "raw_text": "EEE F311: Communication systems",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 681
+      }
+    },
+    {
+      "course_code": "FRE N102T",
+      "prerequisite_course_codes": [
+        "FRE N101T"
+      ],
+      "rule": "single",
+      "raw_text": "FRE N101T Phrases and sentence patterns in technical literature; spe- cial technical vocabulary; reading and translation of current technical literature from French to English with the help of a dictionary.",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 685
+      }
+    },
+    {
+      "course_code": "GER N102T",
+      "prerequisite_course_codes": [
+        "GER N101T"
+      ],
+      "rule": "single",
+      "raw_text": "GER N101T Phrases and sentence patterns in technical literature; spe- cial technical vocabulary; reading and translation of current technical literature from German to English with the help of a dictionary.",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 685
+      }
+    },
+    {
+      "course_code": "INSTR F216",
+      "prerequisite_course_codes": [
+        "EEE F214",
+        "INSTR F214",
+        "ECE F214"
+      ],
+      "rule": "any_of",
+      "raw_text": "EEE F214 / INSTR F214 / ECE F214 : Electronic Devices",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 695
+      }
+    },
+    {
+      "course_code": "INSTR F423",
+      "prerequisite_course_codes": [
+        "EEE F214",
+        "INSTR F214",
+        "ECE F214"
+      ],
+      "rule": "any_of",
+      "raw_text": "EEE F214 / INSTR F214 / ECE F214 : Electronic Devices",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 696
+      }
+    },
+    {
+      "course_code": "INSTR F424",
+      "prerequisite_course_codes": [
+        "EEE F242",
+        "INSTR F242",
+        "ECE F242"
+      ],
+      "rule": "any_of",
+      "raw_text": "EEE F242 / INSTR F242 / ECE F242 : Control Systems",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 696
+      }
+    },
+    {
+      "course_code": "INSTR F438",
+      "prerequisite_course_codes": [
+        "ECE F211",
+        "EEE F211",
+        "INSTR F211",
+        "ECE F242",
+        "EEE F242",
+        "INSTR F242"
+      ],
+      "rule": "mixed_needs_verification",
+      "raw_text": "ECE/EEE/INSTR F211: Electrical Machines, and ECE/EEE/INSTR F242: Control Systems",
+      "status": "needs_verification",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 697
+      }
+    },
+    {
+      "course_code": "MAC F211",
+      "prerequisite_course_codes": [
+        "MATH F112"
+      ],
+      "rule": "single",
+      "raw_text": "MATH F112: Mathematics II",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 699
+      }
+    },
+    {
+      "course_code": "MAC F243",
+      "prerequisite_course_codes": [
+        "MATH F112"
+      ],
+      "rule": "single",
+      "raw_text": "MATH F112: Mathematics II",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 700
+      }
+    },
+    {
+      "course_code": "MAC F244",
+      "prerequisite_course_codes": [
+        "MATH F113",
+        "MATH F211",
+        "MATH F214"
+      ],
+      "rule": "any_of",
+      "raw_text": "MATH F113: Probability and Statistics OR MATH F211: MATHEMATICS -III OR MATH F214: Elementary Real Analysis",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 700
+      }
+    },
+    {
+      "course_code": "MAC F313",
+      "prerequisite_course_codes": [
+        "MATH F113"
+      ],
+      "rule": "single",
+      "raw_text": "MATH F113: Probability and Statistics",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 700
+      }
+    },
+    {
+      "course_code": "MAC F314",
+      "prerequisite_course_codes": [
+        "MATH F211"
+      ],
+      "rule": "single",
+      "raw_text": "MATH F211: MATHEMATICS-III",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 700
+      }
+    },
+    {
+      "course_code": "MATH F425",
+      "prerequisite_course_codes": [
+        "MATH F112"
+      ],
+      "rule": "single",
+      "raw_text": "MATH F112 Mathematics II",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 703
+      }
+    },
+    {
+      "course_code": "MATH F429",
+      "prerequisite_course_codes": [
+        "MATH F341"
+      ],
+      "rule": "single",
+      "raw_text": "MATH F341: Introduction to Functional Analysis",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 704
+      }
+    },
+    {
+      "course_code": "ME F428",
+      "prerequisite_course_codes": [
+        "ME F216",
+        "MF F216",
+        "CHE F243"
+      ],
+      "rule": "any_of",
+      "raw_text": "ME F216 or MF F216 or CHE F243",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 717
+      }
+    },
+    {
+      "course_code": "ME F429",
+      "prerequisite_course_codes": [
+        "ME F220",
+        "CHE F241"
+      ],
+      "rule": "any_of",
+      "raw_text": "ME F220 OR CHE F241",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 717
+      }
+    },
+    {
+      "course_code": "ME F430",
+      "prerequisite_course_codes": [
+        "ME F211",
+        "ME F212"
+      ],
+      "rule": "all_of",
+      "raw_text": "ME F211: Mechanics of Solids, ME F212: Fluid Mechanics",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 717
+      }
+    },
+    {
+      "course_code": "ME G613",
+      "prerequisite_course_codes": [
+        "CE F435",
+        "CE G619",
+        "ME G512"
+      ],
+      "rule": "any_of",
+      "raw_text": "CE F435 OR CE G619 OR ME G512",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 721
+      }
+    },
+    {
+      "course_code": "MPBA G537",
+      "prerequisite_course_codes": [
+        "MPBA G507"
+      ],
+      "rule": "single",
+      "raw_text": "MPBA G507 Programming for Analytics",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 713
+      }
+    },
+    {
+      "course_code": "PHA F315",
+      "prerequisite_course_codes": [
+        "PHA F216"
+      ],
+      "rule": "single",
+      "raw_text": "PHA F216: Pharmaceutical Formulations I",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 734
+      }
+    },
+    {
+      "course_code": "PHA F317",
+      "prerequisite_course_codes": [
+        "PHA F311"
+      ],
+      "rule": "single",
+      "raw_text": "PHA F311 : Pharmacology I",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 734
+      }
+    },
+    {
+      "course_code": "PHA F419",
+      "prerequisite_course_codes": [
+        "PHA F344"
+      ],
+      "rule": "single",
+      "raw_text": "PHA F344 : Natural Drugs",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 735
+      }
+    },
+    {
+      "course_code": "PHY F318",
+      "prerequisite_course_codes": [
+        "PHY F242",
+        "PHY F345",
+        "CHEM F213"
+      ],
+      "rule": "any_of",
+      "raw_text": "PHY F242: Quantum Mechanics I OR PHY F345: Quantum Mechanics for Engineers OR CHEM F213: Physical Chemistry II",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 740
+      }
+    },
+    {
+      "course_code": "PHY F346",
+      "prerequisite_course_codes": [
+        "PHY F212",
+        "EEE F212",
+        "INSTR F212",
+        "ECE F212"
+      ],
+      "rule": "any_of",
+      "raw_text": "PHY F212: Electromagnetic Theory I or EEE F212 or INSTR F212 or ECE F212 : Electromagnetic Theory",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 740
+      }
+    },
+    {
+      "course_code": "PHY F433",
+      "prerequisite_course_codes": [
+        "PHY F212",
+        "PHY F213"
+      ],
+      "rule": "all_of",
+      "raw_text": "PHY F212 & PHY F213",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 742
+      }
+    },
+    {
+      "course_code": "PHY F434",
+      "prerequisite_course_codes": [
+        "PHY F242"
+      ],
+      "rule": "single",
+      "raw_text": "PHY F242: Quantum Mechanics I",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 742
+      }
+    },
+    {
+      "course_code": "PHY F435",
+      "prerequisite_course_codes": [
+        "PHY F313"
+      ],
+      "rule": "single",
+      "raw_text": "PHY F313: Computational Physics",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 742
+      }
+    },
+    {
+      "course_code": "PHY F438",
+      "prerequisite_course_codes": [
+        "PHY F211",
+        "PHY F212",
+        "PHY F241",
+        "PHY F242",
+        "PHY F311"
+      ],
+      "rule": "all_of",
+      "raw_text": "PHY F211: Classical Mechanics and PHY F212: Electromagnetic Theory I and PHY F241: Electromagnetic Theory II and PHY F242: Quantum Mechanics I and PHY F311: Quantum Mechanics II PHY F311: Quantum Mechanics II",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 742
+      }
+    },
+    {
+      "course_code": "RUS N102T",
+      "prerequisite_course_codes": [
+        "RUS N101T"
+      ],
+      "rule": "single",
+      "raw_text": "RUS N101T Phrases and sentence patterns in technical literature; special technical vocabulary; reading and translation of current technical literature from Russian to English with the help of a dictionary.",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 745
+      }
+    },
+    {
+      "course_code": "SNS F343",
+      "prerequisite_course_codes": [
+        "SNS F244"
+      ],
+      "rule": "single",
+      "raw_text": "SNS F244: Nanomaterials Synthesis & Character- ization Laboratory",
+      "status": "parsed",
+      "source": {
+        "document": "data/bulletin.pdf",
+        "page": 747
+      }
+    }
+  ]
+}

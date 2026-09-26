@@ -1,0 +1,182 @@
+{
+  "document": {
+    "path": "data/handouts/191_CS_U407.pdf",
+    "page_count": 4,
+    "semester": "First Semester 2026-2027",
+    "document_type": "Course Handout Part II"
+  },
+  "course": {
+    "primary_code": {
+      "value": "CS F407",
+      "status": "verified",
+      "source": {
+        "document": "data/handouts/191_CS_U407.pdf",
+        "page": 1
+      }
+    },
+    "alternate_codes": {
+      "value": [
+        "CS U407"
+      ],
+      "status": "verified",
+      "source": {
+        "document": "data/handouts/191_CS_U407.pdf",
+        "page": 1
+      }
+    },
+    "title": {
+      "value": "ARTIFICIAL INTELLIGENCE",
+      "status": "verified",
+      "source": {
+        "document": "data/handouts/191_CS_U407.pdf",
+        "page": 1
+      }
+    },
+    "instructor_in_charge": {
+      "value": "GOPAL SINGH PHARTIYAL",
+      "status": "verified",
+      "source": {
+        "document": "data/handouts/191_CS_U407.pdf",
+        "page": 1
+      }
+    },
+    "description": {
+      "value": "Artificial Intelligence (AI) is a field of computer science that seeks to build systems that emulate human cognition. A primary goal of AI is to build intelligent entities that mimic human intelligence, such as problem -solving, reasoning, planning, uncertainty handling, and learning . The course introduces students to a large collection of algorithms and techniques for building these intelligent entities. By the end of the course, the students should have a general knowledge of the field of AI. They should be able to recognize when an d how to use AI techniques to solve problems. The students should also be able to evaluate new techniques they encounter. This course covers the issues and techniques involved in creating computer systems that exhibit intelligent behavior. The following are among the topics that we will cover: AI search techniques, Game Playing, Planning, Knowledge Representation, Reasoning under Uncertainty, and Reinforcement Learning.",
+      "status": "verified",
+      "source": {
+        "document": "data/handouts/191_CS_U407.pdf",
+        "page": 1
+      }
+    },
+    "topics": {
+      "value": [
+        "AI search techniques",
+        "Game Playing",
+        "Planning",
+        "Knowledge Representation",
+        "Reasoning under Uncertainty",
+        "Reinforcement Learning"
+      ],
+      "status": "verified",
+      "source": {
+        "document": "data/handouts/191_CS_U407.pdf",
+        "page": 1
+      }
+    },
+    "prerequisites": {
+      "value": null,
+      "status": "needs_verification",
+      "source": null,
+      "note": "No explicit course-code prerequisite was found in this handout."
+    }
+  },
+  "handout_properties": {
+    "evaluation_components": {
+      "value": [
+        {
+          "name": "MidSem Test",
+          "duration": "90 Mins",
+          "weight_percent": 25,
+          "timing": "October 08, 2026",
+          "source": {
+            "document": "data/handouts/191_CS_U407.pdf",
+            "page": 4
+          },
+          "status": "verified"
+        },
+        {
+          "name": "Building Geospatial Intelligent Agents Project",
+          "duration": "Take Home",
+          "weight_percent": 30,
+          "timing": "Continuous Evaluation (submissions and Viva)",
+          "source": {
+            "document": "data/handouts/191_CS_U407.pdf",
+            "page": 4
+          },
+          "status": "verified"
+        },
+        {
+          "name": "Quizzes",
+          "duration": "10 Mins each",
+          "weight_percent": 10,
+          "timing": "In lecture",
+          "source": {
+            "document": "data/handouts/191_CS_U407.pdf",
+            "page": 4
+          },
+          "status": "verified"
+        },
+        {
+          "name": "Comprehensive Exam",
+          "duration": "180 Mins",
+          "weight_percent": 35,
+          "timing": "December 11, 2026",
+          "source": {
+            "document": "data/handouts/191_CS_U407.pdf",
+            "page": 4
+          },
+          "status": "verified"
+        }
+      ],
+      "status": "verified",
+      "source": {
+        "document": "data/handouts/191_CS_U407.pdf",
+        "page": 4
+      }
+    },
+    "has_midsem": {
+      "value": true,
+      "status": "verified",
+      "source": {
+        "document": "data/handouts/191_CS_U407.pdf",
+        "page": 4
+      }
+    },
+    "has_comprehensive_exam": {
+      "value": true,
+      "status": "verified",
+      "source": {
+        "document": "data/handouts/191_CS_U407.pdf",
+        "page": 4
+      }
+    },
+    "has_project": {
+      "value": true,
+      "status": "verified",
+      "source": {
+        "document": "data/handouts/191_CS_U407.pdf",
+        "page": 4
+      }
+    },
+    "project_details": {
+      "value": "Students would be required to self-read, learn, and build a particular aspect of a given topic of an existing or novel Intelligent System. The domain of this “Intelligent System” will be informed in the first few weeks of the start of the course. You will also be required to design and demonstrate a working solution to the identified problem. For this assignment, students will form a group (group-size = ~ 2 or less. Other details will be communicated in due course of time) Viva-voce sessions will be arranged for group presentations.",
+      "status": "verified",
+      "source": {
+        "document": "data/handouts/191_CS_U407.pdf",
+        "page": 4
+      }
+    },
+    "attendance_policy": {
+      "value": null,
+      "status": "needs_verification",
+      "source": null,
+      "note": "The handout does not explicitly state an attendance policy."
+    },
+    "makeup_policy": {
+      "value": "To be granted only in case of serious illness or emergency.",
+      "status": "verified",
+      "source": {
+        "document": "data/handouts/191_CS_U407.pdf",
+        "page": 4
+      }
+    }
+  },
+  "validation": {
+    "evaluation_weight_total": 100,
+    "evaluation_weight_check": "passed",
+    "warnings": [
+      "Prerequisites require verification from the bulletin or regulations.",
+      "Attendance requirements could not be verified from this handout."
+    ]
+  }
+}
