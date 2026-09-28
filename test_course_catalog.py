@@ -7,6 +7,7 @@ from build_course_catalog import (
     parse_bulletin_prerequisites,
     parse_timetable_courses,
 )
+from parse_course_categories import parse_course_categories
 
 
 class CourseCatalogTests(unittest.TestCase):
@@ -14,6 +15,49 @@ class CourseCatalogTests(unittest.TestCase):
     def setUpClass(cls):
         cls.prerequisites = parse_bulletin_prerequisites()
         cls.timetable_codes = parse_timetable_courses()
+        category_output = parse_course_categories()
+        cls.categories = {
+            record["course_code"]: record["classifications"]
+            for record in category_output["courses"]
+        }
+
+    def test_categories_are_programme_specific(self):
+        cs_f213 = {
+            (item["programme"], item["category"])
+            for item in self.categories["CS F213"]
+        }
+        self.assertIn(("Computer Science", "CDC"), cs_f213)
+        self.assertIn(
+            ("Electrical and Electronics Engineering", "DEL"),
+            cs_f213,
+        )
+
+    def test_ai_is_a_computer_science_del(self):
+        cs_f407 = {
+            (item["programme"], item["category"])
+            for item in self.categories["CS F407"]
+        }
+        self.assertIn(("Computer Science", "DEL"), cs_f407)
+
+    def test_humanities_pool_is_common_to_first_degree_programmes(self):
+        hss_f343 = {
+            (item["programme"], item["category"])
+            for item in self.categories["HSS F343"]
+        }
+        self.assertIn(
+            ("All First-Degree Programmes", "HUEL"),
+            hss_f343,
+        )
+
+    def test_other_courses_are_not_misread_as_humanities_electives(self):
+        bits_f225 = {
+            (item["programme"], item["category"])
+            for item in self.categories.get("BITS F225", [])
+        }
+        self.assertNotIn(
+            ("All First-Degree Programmes", "HUEL"),
+            bits_f225,
+        )
 
     def test_eee_f437_prerequisites(self):
         record = self.prerequisites["EEE F437"]
@@ -66,11 +110,25 @@ class CourseCatalogTests(unittest.TestCase):
             "validation": {"status": "passed", "issues": []},
         }
         courses = build_catalog(
-            [handout], self.prerequisites, self.timetable_codes
+            [handout],
+            self.prerequisites,
+            self.timetable_codes,
+            self.categories,
         )
         self.assertIs(courses[0]["offered_this_sem"], True)
         self.assertEqual(
             courses[0]["formal_prerequisites"]["rule"], "any_of"
+        )
+        self.assertIn(
+            {
+                "programme": "Electrical and Electronics Engineering",
+                "category": "DEL",
+                "source": {
+                    "document": "data/bulletin.pdf",
+                    "page": 319,
+                },
+            },
+            courses[0]["programme_classifications"],
         )
 
 

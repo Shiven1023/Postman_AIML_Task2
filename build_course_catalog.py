@@ -1,16 +1,18 @@
 """Build one small course catalogue from the processed handouts and two PDFs.
 
-The pipeline intentionally does only three things:
+The pipeline intentionally does only four things:
 
 1. Read explicit, course-code prerequisites from the Bulletin.
-2. Read course codes listed in the current semester timetable.
-3. Add both results to the already processed handout records.
+2. Read programme-specific CDC/DEL lists and the common HUEL pool.
+3. Read course codes listed in the current semester timetable.
+4. Add those results to the already processed handout records.
 
 Run:
     python build_course_catalog.py
 
 Outputs:
     processed/bulletin_prerequisites.json
+    processed/course_categories.json
     processed/timetable_courses.json
     processed/course_catalog.json
 """
@@ -21,6 +23,8 @@ import re
 from pathlib import Path
 
 from pypdf import PdfReader
+
+from parse_course_categories import parse_course_categories
 
 
 PROJECT_DIR = Path(__file__).parent
@@ -382,16 +386,36 @@ def combine_duplicate_handouts(courses):
     return list(combined.values())
 
 
-def build_catalog(handout_records, bulletin_prerequisites, timetable_codes):
-    """Attach formal prerequisites and one availability boolean to each course."""
+def build_catalog(
+    handout_records,
+    bulletin_prerequisites,
+    timetable_codes,
+    course_categories=None,
+):
+    """Attach rules, programme categories, and availability to each course."""
     courses = combine_duplicate_handouts(
         [flatten_handout(record) for record in handout_records]
     )
     offered = set(timetable_codes)
+    course_categories = course_categories or {}
 
     for course in courses:
         possible_codes = [course["course_code"], *course["alternate_codes"]]
         course["offered_this_sem"] = any(code in offered for code in possible_codes)
+
+        classifications = []
+        for code in possible_codes:
+            for classification in course_categories.get(code, []):
+                if not any(
+                    item["programme"] == classification["programme"]
+                    and item["category"] == classification["category"]
+                    for item in classifications
+                ):
+                    classifications.append(classification)
+        course["programme_classifications"] = sorted(
+            classifications,
+            key=lambda item: (item["programme"], item["category"]),
+        )
 
         matches = [
             bulletin_prerequisites[code]
@@ -429,10 +453,18 @@ def write_json(path, value):
 
 def main():
     bulletin_prerequisites = parse_bulletin_prerequisites()
+    category_output = parse_course_categories()
+    category_index = {
+        record["course_code"]: record["classifications"]
+        for record in category_output["courses"]
+    }
     timetable_codes = parse_timetable_courses()
     handout_records = json.loads(HANDOUTS_PATH.read_text())
     courses = build_catalog(
-        handout_records, bulletin_prerequisites, timetable_codes
+        handout_records,
+        bulletin_prerequisites,
+        timetable_codes,
+        category_index,
     )
 
     bulletin_output = {
@@ -470,7 +502,12 @@ def main():
                 "handouts": relative_path(HANDOUTS_PATH),
                 "bulletin": relative_path(BULLETIN_PATH),
                 "timetable": relative_path(TIMETABLE_PATH),
+                "course_categories": "processed/course_categories.json",
             },
+            "category_rules": category_output["metadata"].get("rules", []),
+            "first_year_note": category_output["metadata"].get(
+                "first_year_note"
+            ),
             "counts": {
                 "handout_records": len(handout_records),
                 "unique_courses": len(courses),
@@ -487,12 +524,20 @@ def main():
                     )
                     for course in courses
                 ),
+                "courses_with_programme_classifications": sum(
+                    bool(course["programme_classifications"])
+                    for course in courses
+                ),
             },
         },
         "courses": courses,
     }
 
     write_json(BULLETIN_OUTPUT, bulletin_output)
+    write_json(
+        PROJECT_DIR / "processed/course_categories.json",
+        category_output,
+    )
     write_json(TIMETABLE_OUTPUT, timetable_output)
     write_json(CATALOG_OUTPUT, catalog_output)
 

@@ -1,8 +1,5 @@
 """Extract common identity and descriptive fields from BITS course handouts.
 
-This is the second learning step after ``process_cs_u407.py``.  It deliberately
-does NOT parse evaluation tables yet.
-
 Run all handouts:
     python parse_handouts.py
 
